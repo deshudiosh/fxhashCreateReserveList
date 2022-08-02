@@ -22,6 +22,7 @@ def query(url, params):
                     entireCollection {
                         owner {
                             id
+                            name
                         }
                         minter {
                             id
