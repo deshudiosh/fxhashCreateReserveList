@@ -50,6 +50,9 @@ def print_reserve_list_names(reserve_list, objkts):
 
     print(names)
 
+    with open("reserve_list_names.txt", "w") as f:
+        json.dump(names, f, indent=4)
+
 
 def save_reserve_list():
     objkts = get_objkts()
